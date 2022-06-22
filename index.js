@@ -10,7 +10,7 @@ function launchIt(){
         if(fail < 60){
             let countDown = setInterval(()=>{
                 timeRemaining--
-                launchEl.innerHTML = `00:${timeRemaining}`
+                launchEl.innerHTML = `00:0${timeRemaining}`
                 if(timeRemaining == 0){
                     // launchEl.innerHTML = 'Blast Off!'
                     clearInterval(countDown)
